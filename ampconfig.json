@@ -1,0 +1,19 @@
+{
+  "dataServiceGeneratorVersion": "0.13.1",
+  "appInfo": {
+    "name": "CYT test",
+    "description": "",
+    "version": "6xc6xxd7",
+    "id": "cl4oie5lb91435101l97055riws",
+    "url": "https://server.amplication.com/cl4oie5lb91435101l97055riws",
+    "settings": {
+      "dbHost": "localhost",
+      "dbName": "CYT-Database",
+      "dbPassword": "admin",
+      "dbPort": 5432,
+      "dbUser": "admin",
+      "appId": "cl4oie5lb91435101l97055riws",
+      "authProvider": "Jwt"
+    }
+  }
+}

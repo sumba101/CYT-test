@@ -1,0 +1,218 @@
+[
+  {
+    "role": "admin",
+    "resource": "User",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "User",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "agent",
+    "resource": "User",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "User",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "User",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "agent",
+    "resource": "User",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "User",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "agent",
+    "resource": "User",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "User",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Pickup",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "agent",
+    "resource": "Pickup",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "Pickup",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Pickup",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "agent",
+    "resource": "Pickup",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "Pickup",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Pickup",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "agent",
+    "resource": "Pickup",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "Pickup",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Pickup",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "agent",
+    "resource": "Pickup",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "Pickup",
+    "action": "delete:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "Pickup",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "agent",
+    "resource": "Pickup",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "Pickup",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "TotalStat",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "agent",
+    "resource": "TotalStat",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "TotalStat",
+    "action": "read:own",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "TotalStat",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "agent",
+    "resource": "TotalStat",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "TotalStat",
+    "action": "create:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "TotalStat",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "agent",
+    "resource": "TotalStat",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "TotalStat",
+    "action": "update:any",
+    "attributes": "*"
+  },
+  {
+    "role": "user",
+    "resource": "TotalStat",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "agent",
+    "resource": "TotalStat",
+    "action": "read:any",
+    "attributes": "*"
+  },
+  {
+    "role": "admin",
+    "resource": "TotalStat",
+    "action": "read:any",
+    "attributes": "*"
+  }
+]

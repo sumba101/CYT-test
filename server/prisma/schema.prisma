@@ -1,0 +1,72 @@
+datasource postgres {
+  provider = "postgresql"
+  url      = env("POSTGRESQL_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model User {
+  createdAt   DateTime  @default(now())
+  emailId     String    @unique
+  firstName   String?
+  id          String    @id @default(cuid())
+  lastName    String?
+  password    String
+  phoneNumber String    @unique
+  pickups     Pickup[]
+  roles       String[]
+  totalStats  TotalStat
+  updatedAt   DateTime  @updatedAt
+  upiId       String    @unique
+  username    String    @unique
+}
+
+model Pickup {
+  agentId      String?
+  cashStatus   EnumPickupCashStatus
+  createdAt    DateTime               @default(now())
+  id           String                 @id @default(cuid())
+  pickupStatus EnumPickupPickupStatus
+  rateForScrap Float
+  remuneration Float
+  scrapType    EnumPickupScrapType
+  scrapWeight  Float
+  updatedAt    DateTime               @updatedAt
+  uuid         User                   @relation(fields: [uuidId], references: [id])
+  uuidId       String                 @unique
+}
+
+model TotalStat {
+  co2Saved        Float?
+  createdAt       DateTime @default(now())
+  ecoCoins        Int
+  id              String   @id @default(cuid())
+  kgsRecycle      Float
+  moneyEarned     Float
+  numberOfPickups Int
+  treesSaved      Float?
+  updatedAt       DateTime @updatedAt
+  uuid            User     @relation(fields: [uuidId], references: [id])
+  uuidId          String   @unique
+  waterSaved      Float?
+}
+
+enum EnumPickupCashStatus {
+  Pending
+  Payed
+}
+
+enum EnumPickupPickupStatus {
+  Pending
+  Cancelled
+  Filled
+}
+
+enum EnumPickupScrapType {
+  Paper
+  Metal
+  Plastic
+  Glass
+}
